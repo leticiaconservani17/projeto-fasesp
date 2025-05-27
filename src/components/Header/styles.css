@@ -1,0 +1,52 @@
+.Container {
+  display: flex;
+  padding: 0px 240px;
+  align-items: center;
+  gap: 16px;
+  background-color: #e30513;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 24px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.list_instituciones {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+}
+
+.list_instituciones li {
+  display: flex;
+  padding: 16px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  padding: 16px 0;
+}
+
+.list_social-media {
+  list-style: none;
+  display: flex;
+  padding-left: 24px;
+  align-items: center;
+  gap: 16px;
+  border-left: 1px solid #d00602;
+}
