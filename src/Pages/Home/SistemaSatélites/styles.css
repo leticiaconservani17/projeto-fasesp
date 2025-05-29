@@ -1,0 +1,27 @@
+.satelites-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 55px;
+}
+
+.satelites-card {
+  height: 220px;
+  overflow: hidden;
+  border-radius: 12px;
+  display: flex;
+  transition: transform 0.2s ease;
+}
+
+.satelites-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  object-position: bottom;
+}
+
+.satelites-card:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}

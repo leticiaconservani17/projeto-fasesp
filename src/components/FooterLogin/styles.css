@@ -1,0 +1,44 @@
+.footerLogin {
+  background-color: #7d0401;
+  height: 75px;
+}
+
+.footerLogin-content {
+  display: flex;
+  padding: 0 20%;
+  align-items: center;
+  gap: 16px;
+  height: 100%;
+}
+
+.footerLogin-content img {
+  width: 70px;
+}
+
+.footerLogin-content p {
+  font-family: 'Open Sans';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  color: white;
+}
+
+@media screen and (max-width: 1020px) {
+  .footerLogin {
+    background-color: #7d0401;
+    height: 50px;
+  }
+
+  .footerLogin-content {
+    padding: 0 10%;
+  }
+
+  .footerLogin-content p {
+    font-size: 10px;
+  }
+
+  .footerLogin-content img {
+    width: 30px;
+  }
+}

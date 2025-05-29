@@ -1,5 +1,5 @@
-import './styles.css'
-import logoSESI from '../../assets/Footer/SESI-logo.svg'
+import "./styles.css";
+import logoSESI from "../../assets/logoFooter.svg";
 
 function Footer() {
   return (
@@ -9,7 +9,7 @@ function Footer() {
         <p> Copyright &copy; Todos os direitos reservados.</p>
       </div>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
