@@ -1,0 +1,300 @@
+.UC-Head {
+  display: flex;
+  padding-bottom: 16px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: stretch;
+}
+
+.UC-Head p {
+  font-family: 'Open Sans';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.UC-Head p span {
+  padding-left: 10px;
+  color: #116ee9;
+}
+
+.UC-Head h2 {
+  font-family: 'Open Sans';
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.banner-welcome {
+  background-image: url('../../assets/UnidadeCurricular/b415775d1a193aa973bae9e0abc695e384b910bd.png');
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  padding: 70px 40px;
+  margin: 10px 0 32px 0;
+  display: flex;
+  align-items: center;
+  min-height: 250px;
+  color: #1a202c;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.banner-content {
+  max-width: 500px;
+  padding: 60px;
+  border-radius: 8px;
+}
+
+.banner-content h3 {
+  color: #00233d;
+
+  font-family: 'Open Sans';
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  padding-bottom: 30px;
+}
+
+.banner-content p {
+  color: #00233d;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.banner-content strong {
+  color: #00233d;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.extra-text {
+  margin-top: 20px;
+  font-size: 16px;
+  font-family: 'Open Sans';
+  color: #00233d;
+  line-height: 18px;
+}
+
+.labelCourse {
+  width: 100%;
+  height: 60px;
+  background-image: url('../../assets/UnidadeCurricular/74f822634ef90b5747d325895fb9ac3a5631ff8f.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 60px 100px;
+  margin: 32px 0 32px;
+}
+
+.labelCourse p {
+  font-family: 'Open Sans';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  color: white;
+}
+
+.courseContent {
+  display: flex;
+  padding: 100px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+  align-self: stretch;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  flex-direction: column;
+}
+
+.courseContent strong {
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.courseContent p {
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.courseContent ul {
+  padding-left: 35px;
+  margin-top: 10px;
+}
+
+.courseContent ul li {
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 10px;
+  list-style-type: disc;
+}
+
+.labelCourse.programatico {
+  background-image: url('../../assets/UnidadeCurricular/c7943bf27e283a998c222397bb38c9a99a17b3d9.png'); /* ou .svg/.jpg */
+}
+
+.linkCourse {
+  display: flex;
+  background-color: #f9f9f9;
+  padding: 30px 100px;
+  gap: 10px;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.linkCourse p {
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.linkCourse a {
+  font-family: 'Open Sans';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
+  color: #850200;
+}
+
+.clickable {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.card-dinamico {
+  background-size: contain;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+  height: 250px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-shadow:
+    0px 6px 10px 4px rgba(0, 0, 0, 0.15),
+    0px 2px 3px 0px rgba(0, 0, 0, 0.3);
+
+  padding-top: 15px;
+  border-top: 6px solid #1670cc;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card-dinamico:hover {
+  transform: scale(1.03);
+  box-shadow:
+    0px 8px 16px rgba(0, 0, 0, 0.25),
+    0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  background: rgba(22, 112, 204, 0.6);
+
+  color: white;
+  padding: 6px 12px;
+  font-family: 'Open Sans';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.link-voltar {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  padding-right: 8px;
+}
+
+@media screen and (max-width: 730px) {
+  .UC-Head p {
+    font-size: 12px;
+  }
+
+  .UC-Head h2 {
+    font-size: 25px;
+  }
+
+  .banner-welcome {
+    padding: 0;
+  }
+
+  .banner-content {
+    padding: 18px;
+  }
+
+  .banner-content p {
+    line-height: 20px;
+  }
+
+  .banner-welcome {
+    background-position: left center;
+  }
+
+  .courseContent {
+    padding: 40px 18px;
+  }
+
+  .courseContent p {
+    font-size: 12px;
+  }
+
+  .courseContent ul li {
+    font-size: 12px;
+  }
+
+  .labelCourse {
+    padding: 45px 18px;
+  }
+
+  .labelCourse p {
+    line-height: 30px;
+  }
+
+  .linkCourse {
+    padding: 30px 18px;
+    gap: 30px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

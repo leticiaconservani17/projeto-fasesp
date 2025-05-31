@@ -1,4 +1,4 @@
-.ContainerHeader {
+.ContainerHeaderLogin {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,7 +34,7 @@
 
 .list_institucionesLogin li {
   display: flex;
-  padding: 16px 0px;
+  padding: 37px 0px;
   justify-content: center;
   align-items: center;
   gap: 10px;

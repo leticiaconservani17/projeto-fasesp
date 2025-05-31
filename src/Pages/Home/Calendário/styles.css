@@ -74,3 +74,40 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+@media screen and (max-width: 768px) {
+  .calendar {
+    font-size: 14px;
+    border-radius: 0;
+  }
+
+  .header-calendar,
+  .body {
+    grid-template-columns: repeat(7, minmax(40px, 1fr));
+  }
+
+  .header-cell {
+    font-size: 12px;
+    padding: 4px 0;
+  }
+
+  .cell {
+    padding: 6px 4px;
+    min-height: 60px;
+    font-size: 12px;
+    gap: 6px;
+  }
+
+  .day {
+    font-size: 13px;
+  }
+
+  .event {
+    font-size: 11px;
+    padding: 4px 6px;
+    width: auto;
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
+  }
+}

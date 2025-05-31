@@ -31,15 +31,17 @@ function Calendar() {
   }
 
   return (
-    <div className="calendar">
-      <div className="header-calendar">
-        {daysOfWeek.map((day) => (
-          <div className="header-cell" key={day}>
-            {day}
-          </div> // <--- apenas "header-cell"
-        ))}
+    <div className="calendarContent">
+      <div className="calendar">
+        <div className="header-calendar">
+          {daysOfWeek.map((day) => (
+            <div className="header-cell" key={day}>
+              {day}
+            </div>
+          ))}
+        </div>
+        <div className="body">{cells}</div>
       </div>
-      <div className="body">{cells}</div>
     </div>
   )
 }

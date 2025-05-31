@@ -24,7 +24,7 @@
   color: white;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 730px) {
   .footerLogin {
     background-color: #7d0401;
     height: 50px;

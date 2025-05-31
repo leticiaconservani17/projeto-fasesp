@@ -25,3 +25,24 @@
   transform: scale(1.02);
   cursor: pointer;
 }
+
+@media screen and (max-width: 1024px) {
+  .satelites-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .satelites-card {
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .satelites-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .satelites-card {
+    height: 160px;
+  }
+}

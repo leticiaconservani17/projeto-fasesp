@@ -1,6 +1,6 @@
 .content {
   display: flex;
-  padding: 52px 330px 124px 330px;
+  padding: 4% 20%;
   flex-direction: column;
   align-items: stretch;
   align-self: stretch;
@@ -77,4 +77,39 @@
 .nav ul li.active {
   font-weight: 600;
   border-bottom: 4px solid #d00602;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    padding: 32px 40px 60px 40px;
+  }
+
+  .title h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .title p {
+    text-align: center;
+  }
+
+  .nav {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+  }
+
+  .nav ul li {
+    font-size: 16px;
+    padding: 10px 0;
+    text-align: center;
+    min-width: 120px;
+  }
 }

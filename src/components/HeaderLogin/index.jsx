@@ -16,7 +16,7 @@ function Header() {
 
   return (
     <>
-      <div className="ContainerHeader">
+      <div className="ContainerHeaderLogin">
         <img className="logoHeader" src={logo} alt="Logo faculdade SESI" />
 
         <div

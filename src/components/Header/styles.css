@@ -1,44 +1,56 @@
-.Container {
+.ContainerHeader {
   display: flex;
-  padding: 0px 330px;
+  justify-content: space-between;
   align-items: center;
   gap: 16px;
   background-color: #e30513;
   height: 100px;
+  padding: 0 20%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
-nav {
+.navHeader {
   display: flex;
   justify-content: flex-end;
-  align-items: stretch;
+  align-items: center;
   gap: 24px;
   flex: 1 0 0;
   align-self: stretch;
 }
 
+.hamburguer-menu {
+  display: none;
+}
+
 .list_instituciones {
   display: flex;
   justify-content: flex-end;
-  align-items: stretch;
+  align-items: center;
   gap: 24px;
   list-style: none;
-  height: 100%;
+  flex-wrap: wrap;
 }
 
 .list_instituciones li {
   display: flex;
-  height: 100%;
+  padding: 37px 0px;
   justify-content: center;
   align-items: center;
   gap: 10px;
   font-family: 'Open Sans';
   font-size: 18px;
-  font-style: normal;
   font-weight: 400;
   line-height: 20px;
-  color: rgb(233, 233, 233);
+  color: white;
   cursor: pointer;
-  box-sizing: border-box;
+}
+
+.logo {
+  display: flex;
+  padding: 16px 0;
+  width: 10rem;
+  max-width: 100%;
 }
 
 .list_instituciones li:hover {
@@ -46,22 +58,95 @@ nav {
   border-bottom: 5px solid white;
 }
 
-.logo {
-  display: flex;
-  padding: 16px 0;
-  width: 160px;
+@media screen and (max-width: 730px) {
+  .navHeader {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition:
+      max-height 0.4s ease,
+      opacity 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #e30513;
+    width: 100%;
+    padding: 0 10%;
+    gap: 16px;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    z-index: 1000;
+  }
+
+  .navHeader.open {
+    max-height: 400px;
+    opacity: 1;
+    padding: 16px 10%;
+  }
+  .list_instituciones {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0;
+  }
+
+  .list_social-media {
+    display: flex;
+  }
+
+  .list_instituciones li:hover {
+    border-bottom: none;
+  }
+
+  .list_social-media {
+    border-left: none;
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+
+  .list_instituciones li {
+    width: 100%;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .list_social-media li {
+    width: 100%;
+  }
+
+  .hamburguer-menu {
+    display: block;
+    cursor: pointer;
+    z-index: 1001;
+    font-size: 28px;
+  }
+
+  .icon-transition {
+    color: white;
+    font-size: 28px;
+    transition:
+      transform 0.8s ease,
+      opacity 0.8s ease;
+  }
+
+  .hamburguer-menu.open .icon-transition {
+    transform: rotate(180deg) scale(1.1);
+  }
+
+  .hamburguer-menu svg {
+    transition: transform 0.4s ease;
+  }
 }
 
-.list_social-media {
-  list-style: none;
-  display: flex;
-  padding-left: 24px;
-  align-items: center;
-  gap: 16px;
-  border-left: 3px solid #d00602;
-}
+@media screen and (max-width: 1020px) {
+  .ContainerHeader {
+    height: 70px;
+    padding: 0 10%;
+  }
 
-.list_social-media li img {
-  width: 20px;
-  cursor: pointer;
+  .logoHeader {
+    width: 8rem;
+  }
 }
