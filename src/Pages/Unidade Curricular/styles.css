@@ -1,30 +1,26 @@
 .UC-Head {
   display: flex;
-  padding-bottom: 16px;
+  padding-bottom: var(--spacing-md);
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  gap: 20px;
+  gap: var(--spacing-lg);
   align-self: stretch;
 }
 
 .UC-Head p {
-  font-family: 'Open Sans';
-  font-size: 12px;
-  font-style: normal;
+  font-size: var(--font-size-base);
   font-weight: 400;
   line-height: 16px;
 }
 
 .UC-Head p span {
-  padding-left: 10px;
-  color: #116ee9;
+  padding-left: var(--spacing-sm);
+  color: var(--color-highlight);
 }
 
 .UC-Head h2 {
-  font-family: 'Open Sans';
-  font-size: 25px;
-  font-style: normal;
+  font-size: var(--font-size-xxl);
   font-weight: 600;
   line-height: 120%;
 }
@@ -34,57 +30,45 @@
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;
-  border-radius: 12px;
-  padding: 70px 40px;
-  margin: 10px 0 32px 0;
+  border-radius: var(--radius-lg);
+  margin: var(--spacing-sm) 0 var(--spacing-xl);
   display: flex;
   align-items: center;
-  min-height: 250px;
-  color: #1a202c;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  min-height: var(--card-height);
+  color: var(--color-dark);
+  box-shadow: var(--shadow-light);
 }
 
 .banner-content {
   max-width: 500px;
-  padding: 60px;
-  border-radius: 8px;
+  padding: var(--spacing-4xl);
+  border-radius: var(--radius-md);
 }
 
 .banner-content h3 {
-  color: #00233d;
-
-  font-family: 'Open Sans';
-  font-size: 28px;
-  font-style: normal;
+  font-size: var(--font-size-xxl);
   font-weight: 700;
   line-height: 18px;
-  padding-bottom: 30px;
+  padding-bottom: var(--spacing-xl);
+  color: var(--color-dark-blue);
 }
 
-.banner-content p {
-  color: #00233d;
-  font-family: 'Open Sans';
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
+.banner-content p,
+.banner-content strong {
+  font-size: var(--font-size-md);
   line-height: 18px;
+  color: var(--color-dark-blue);
 }
 
 .banner-content strong {
-  color: #00233d;
-  font-family: 'Open Sans';
-  font-size: 16px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 18px;
 }
 
 .extra-text {
-  margin-top: 20px;
-  font-size: 16px;
-  font-family: 'Open Sans';
-  color: #00233d;
+  margin-top: var(--spacing-lg);
+  font-size: var(--font-size-md);
   line-height: 18px;
+  color: var(--color-dark-blue);
 }
 
 .labelCourse {
@@ -94,117 +78,102 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 8px;
+  border-radius: var(--radius-lg);
   display: flex;
   align-items: center;
-  padding: 60px 100px;
-  margin: 32px 0 32px;
+  padding: var(--spacing-3xl) 100px;
+  margin: var(--spacing-xl) 0;
 }
 
 .labelCourse p {
-  font-family: 'Open Sans';
-  font-size: 24px;
-  font-style: normal;
+  font-size: var(--font-size-xl);
   font-weight: 700;
+  color: var(--color-white);
   line-height: 18px;
-  color: white;
 }
 
 .courseContent {
   display: flex;
-  padding: 100px;
+  padding: var(--spacing-4xl);
   justify-content: center;
   align-items: flex-start;
-  gap: 15px;
+  gap: var(--spacing-sm);
   align-self: stretch;
-  background-color: #f9f9f9;
-  border-radius: 10px;
+  background-color: var(--color-light);
+  border-radius: var(--radius-lg);
   flex-direction: column;
 }
 
-.courseContent strong {
-  font-family: 'Open Sans';
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
+.courseContent strong,
+.courseContent p,
+.courseContent ul li {
+  font-size: var(--font-size-md);
   line-height: 20px;
 }
 
-.courseContent p {
-  font-family: 'Open Sans';
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
+.courseContent strong {
+  font-weight: 700;
 }
 
 .courseContent ul {
-  padding-left: 35px;
-  margin-top: 10px;
+  padding-left: var(--spacing-2xl);
+  margin-top: var(--spacing-sm);
 }
 
 .courseContent ul li {
-  font-family: 'Open Sans';
-  font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  margin-bottom: 10px;
+  margin-bottom: var(--spacing-sm);
   list-style-type: disc;
 }
 
 .labelCourse.programatico {
-  background-image: url('../../assets/UnidadeCurricular/c7943bf27e283a998c222397bb38c9a99a17b3d9.png'); /* ou .svg/.jpg */
+  background-image: url('../../assets/UnidadeCurricular/c7943bf27e283a998c222397bb38c9a99a17b3d9.png');
 }
 
 .linkCourse {
   display: flex;
-  background-color: #f9f9f9;
-  padding: 30px 100px;
-  gap: 10px;
+  background-color: var(--color-light);
+  padding: var(--spacing-2xl) 100px;
+  gap: var(--spacing-sm);
   flex-direction: column;
-  border-radius: 10px;
+  border-radius: var(--radius-lg);
 }
 
 .linkCourse p {
-  font-family: 'Open Sans';
-  font-size: 16px;
-  font-style: normal;
+  font-size: var(--font-size-md);
   font-weight: 700;
   line-height: 20px;
 }
 
 .linkCourse a {
-  font-family: 'Open Sans';
-  font-size: 14px;
-  font-style: normal;
+  font-size: var(--font-size-base);
   font-weight: 400;
   line-height: 20px;
   text-decoration: none;
-  color: #850200;
+  color: var(--color-cta);
 }
 
 .clickable {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 10px;
+  gap: var(--spacing-sm);
 }
 
 .card-dinamico {
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat no-repeat;
   background-position: center;
   overflow: hidden;
   position: relative;
-  height: 250px;
+  height: var(--card-height);
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  box-shadow:
-    0px 6px 10px 4px rgba(0, 0, 0, 0.15),
-    0px 2px 3px 0px rgba(0, 0, 0, 0.3);
-
-  padding-top: 15px;
-  border-top: 6px solid #1670cc;
+  box-shadow: var(--shadow-card);
+  padding-top: var(--spacing-sm);
+  border-top: 6px solid var(--color-accent-strong);
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
@@ -213,19 +182,15 @@
 
 .card-dinamico:hover {
   transform: scale(1.03);
-  box-shadow:
-    0px 8px 16px rgba(0, 0, 0, 0.25),
-    0px 4px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow-hover);
 }
 
 .card-title {
   background: rgba(22, 112, 204, 0.6);
-
-  color: white;
-  padding: 6px 12px;
-  font-family: 'Open Sans';
-  font-size: 18px;
-  font-style: normal;
+  margin-top: var(--spacing-md);
+  padding: var(--spacing-sm);
+  color: var(--color-white);
+  font-size: var(--font-size-lg);
   font-weight: 500;
   line-height: 120%;
 }
@@ -233,56 +198,49 @@
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  margin-top: 32px;
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-xl);
 }
 
 .link-voltar {
-  color: black;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
   text-decoration: none;
   font-weight: 500;
-  padding-right: 8px;
+  padding-right: var(--spacing-md);
 }
 
+/* Responsivo */
 @media screen and (max-width: 730px) {
-  .UC-Head p {
-    font-size: 12px;
-  }
-
+  .UC-Head p,
   .UC-Head h2 {
-    font-size: 25px;
+    font-size: var(--font-size-sm);
   }
 
   .banner-welcome {
     padding: 0;
+    background-position: left center;
   }
 
   .banner-content {
-    padding: 18px;
+    padding: var(--spacing-md);
   }
 
   .banner-content p {
     line-height: 20px;
   }
 
-  .banner-welcome {
-    background-position: left center;
-  }
-
   .courseContent {
-    padding: 40px 18px;
+    padding: var(--spacing-2xl) var(--spacing-md);
   }
 
-  .courseContent p {
-    font-size: 12px;
-  }
-
+  .courseContent p,
   .courseContent ul li {
-    font-size: 12px;
+    font-size: var(--font-size-sm);
   }
 
   .labelCourse {
-    padding: 45px 18px;
+    padding: 45px var(--spacing-md);
   }
 
   .labelCourse p {
@@ -290,11 +248,11 @@
   }
 
   .linkCourse {
-    padding: 30px 18px;
-    gap: 30px;
+    padding: var(--spacing-2xl) var(--spacing-md);
+    gap: var(--spacing-2xl);
   }
 
   .cards {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
   }
 }

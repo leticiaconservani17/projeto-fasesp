@@ -4,10 +4,17 @@
   align-items: center;
   gap: 16px;
   background-color: #e30513;
-  height: 100px;
+  height: 80px;
   padding: 0 20%;
   max-width: 100%;
   box-sizing: border-box;
+}
+
+.logoHeader {
+  display: flex;
+  padding: 16px 0;
+  width: 8rem;
+  max-width: 100%;
 }
 
 .navHeader {
@@ -17,10 +24,6 @@
   gap: 24px;
   flex: 1 0 0;
   align-self: stretch;
-}
-
-.hamburguer-menu {
-  display: none;
 }
 
 .list_institucionesLogin {
@@ -34,23 +37,21 @@
 
 .list_institucionesLogin li {
   display: flex;
-  padding: 37px 0px;
+  padding: 27px 0;
   justify-content: center;
   align-items: center;
   gap: 10px;
   font-family: 'Open Sans';
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   color: white;
   cursor: pointer;
 }
 
-.logoHeader {
-  display: flex;
-  padding: 16px 0;
-  width: 10rem;
-  max-width: 100%;
+.list_institucionesLogin li:hover {
+  color: white;
+  border-bottom: 5px solid white;
 }
 
 .list_social-mediaLogin {
@@ -69,12 +70,15 @@
   cursor: pointer;
 }
 
-.list_institucionesLogin li:hover {
-  color: white;
-  border-bottom: 5px solid white;
+.hamburguer-menu {
+  display: none;
 }
 
 @media screen and (max-width: 730px) {
+  .ContainerHeaderLogin {
+    padding: 0 16px;
+  }
+
   .navHeader {
     overflow: hidden;
     max-height: 0;
@@ -100,6 +104,7 @@
     opacity: 1;
     padding: 16px 10%;
   }
+
   .list_institucionesLogin {
     flex-direction: column;
     align-items: flex-start;
@@ -107,8 +112,10 @@
     padding: 0;
   }
 
-  .list_social-mediaLogin {
-    display: flex;
+  .list_institucionesLogin li {
+    width: 100%;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 
   .list_institucionesLogin li:hover,
@@ -121,12 +128,6 @@
     display: flex;
     width: 100%;
     flex-wrap: nowrap;
-  }
-
-  .list_institucionesLogin li {
-    width: 100%;
-    padding: 12px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 
   .list_social-mediaLogin li {
@@ -154,16 +155,5 @@
 
   .hamburguer-menu svg {
     transition: transform 0.4s ease;
-  }
-}
-
-@media screen and (max-width: 1020px) {
-  .ContainerHeader {
-    height: 70px;
-    padding: 0 10%;
-  }
-
-  .logoHeader {
-    width: 8rem;
   }
 }

@@ -1,6 +1,6 @@
 .footerLogin {
   background-color: #7d0401;
-  height: 75px;
+  height: 48px;
 }
 
 .footerLogin-content {
@@ -12,7 +12,7 @@
 }
 
 .footerLogin-content img {
-  width: 70px;
+  width: 60px;
 }
 
 .footerLogin-content p {
@@ -26,12 +26,11 @@
 
 @media screen and (max-width: 730px) {
   .footerLogin {
-    background-color: #7d0401;
     height: 50px;
   }
 
   .footerLogin-content {
-    padding: 0 10%;
+    padding: 0 16px;
   }
 
   .footerLogin-content p {

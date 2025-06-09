@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 import iconLink from '../../assets/UnidadeCurricular/a10b1a6ce97850ee84cc7506846366618634ace4.png'
 import iconForum from '../../assets/UnidadeCurricular/iconForum.svg'
 import standardCardBg from '../../assets/UnidadeCurricular/c17383523eed2b053cea85cc411b48cfa422f785.png'
+import SidebarMenu from '../../components/SidebarMenu'
 
 const andamento = [
   {
@@ -52,7 +53,7 @@ const slugify = (text) =>
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/(^-|-$)/g, '')
 
-function UnidadeCurricular() {
+function UnidadeCurricularDetail() {
   const { id } = useParams()
 
   const allUCs = [...andamento, ...cursadas]
@@ -63,10 +64,11 @@ function UnidadeCurricular() {
   return (
     <div>
       <Header />
+      <SidebarMenu />
       <div className="content">
         <div className="UC-Head">
           <p>
-            <Link to="/" className="link-voltar">
+            <Link to="/Home" className="link-voltar">
               Unidade curricular
             </Link>{' '}
             / <span>{ucEncontrada?.nome || id}</span>
@@ -178,4 +180,4 @@ function UnidadeCurricular() {
   )
 }
 
-export default UnidadeCurricular
+export default UnidadeCurricularDetail

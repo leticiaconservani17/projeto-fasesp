@@ -1,0 +1,69 @@
+:root {
+  /* Cores principais */
+  --color-primary: #e30513;
+  --color-secondary: #d00602;
+  --color-highlight: #116ee9;
+  --color-light: #f9f9f9;
+  --color-dark: #1c1c1c;
+  --color-text-muted: #736e70;
+  --color-text-light: #a7a7a7;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-accent-strong: #1670cc;
+
+  /* Cores auxiliares */
+  --color-button-hover: #4990ee;
+  --color-button-grey-hover: rgb(241, 241, 241);
+  --color-sucess-bg: #f0fff4;
+  --color-accent: #1e90ff;
+  --color-success: #48bb78;
+  --color-success-light: #c6f6d5;
+  --color-warning: #fed7d7;
+  --color-error: #e53e3e;
+  --color-disabled: #f2f0f0;
+  --color-muted-bg: #efeff1;
+  --color-muted-border: #efeff1;
+  --color-border: #e2e2e2;
+  --color-hover: #f2f2f2;
+  --color-dark-blue: #00233d;
+  --color-cta: #850200;
+
+  /* Tipografia */
+  --font-family: 'Open Sans', sans-serif;
+  --font-size-xs: 10px;
+  --font-size-sm: 12px;
+  --font-size-base: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 24px;
+  --font-size-xxl: 28px;
+  --font-size-title: 32px;
+
+  /* Espaçamentos */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 40px;
+  --spacing-3xl: 60px;
+  --spacing-4xl: 100px;
+
+  /* Bordas */
+  --radius-sm: 3px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-full: 50%;
+
+  /* Sombras */
+  --shadow-light: 0 1px 4px rgba(0, 0, 0, 0.05);
+  --shadow-default: 0 4px 12px rgba(0, 0, 0, 0.06);
+  --shadow-hover: 0 8px 16px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.08);
+  --shadow-card:
+    0px 1px 2px 0px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+
+  /* Outros */
+  --input-height: 48px;
+  --card-height: 250px;
+}

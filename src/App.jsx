@@ -7,7 +7,8 @@ import UnidadeCurricular from './Pages/Unidade Curricular'
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<Login />} />
+      <Route path="/Home" element={<Home />} />
       <Route path="/login" element={<Login />} />
       <Route path="/Unidade/:id" element={<UnidadeCurricular />} />
     </Routes>

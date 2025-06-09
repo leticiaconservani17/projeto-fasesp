@@ -1,14 +1,14 @@
 .satelites-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin-top: 55px;
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-3xl);
 }
 
 .satelites-card {
   height: 220px;
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: var(--radius-xl);
   display: flex;
   transition: transform 0.2s ease;
 }
@@ -17,8 +17,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 12px;
   object-position: bottom;
+  border-radius: var(--radius-xl);
 }
 
 .satelites-card:hover {
@@ -29,7 +29,7 @@
 @media screen and (max-width: 1024px) {
   .satelites-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+    gap: var(--spacing-md);
   }
 
   .satelites-card {

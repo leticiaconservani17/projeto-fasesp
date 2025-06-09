@@ -1,0 +1,72 @@
+.notas-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+  padding: var(--spacing-2xl) var(--spacing-lg);
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+}
+
+.notas-container h2 {
+  font-size: var(--font-size-title);
+  font-weight: 600;
+  color: var(--color-dark);
+  margin-bottom: var(--spacing-md);
+}
+
+.notas-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nota-item {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md) var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  background-color: var(--color-white);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.nota-item:hover {
+  background-color: var(--color-muted-bg);
+  background-color: var(--color-hover);
+}
+
+.uc-notas {
+  font-size: var(--font-size-md);
+  font-weight: 500;
+  color: var(--color-dark);
+  max-width: 75%;
+  line-height: 1.4;
+}
+
+.valor {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  color: var(--color-success);
+  min-width: 48px;
+  text-align: right;
+}
+
+/* Responsivo opcional */
+@media (max-width: 600px) {
+  .nota-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+  }
+
+  .valor {
+    align-self: flex-end;
+  }
+}
